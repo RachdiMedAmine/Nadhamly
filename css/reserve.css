@@ -1,0 +1,133 @@
+.buy-btn{
+    display: inline-block;
+    color: var(--marron-clair);
+    font-size: 19px;
+    background-color: var(--text-marron);
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 15px;
+    transition: .3s ease;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.3s all;
+  }
+
+
+
+
+  /*pour .card supprimés de index*/
+.card {
+    box-shadow: 0 0 2.2em var(--marron-clair);
+    padding: 3.5em 1em;
+    border-radius: 0.6em;
+    color: var(--text-marron); 
+    cursor: pointer;
+    transition: 0.3s;
+}
+.card a {
+    color: var(--white) !important; 
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+}
+.card h3{
+    font-weight: 500;
+}
+.card p{
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0.5em 0 2em 0;
+    letter-spacing: 2px;
+}
+.card a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.4em;
+}
+.card:exclude-details-art:hover {
+    background: linear-gradient(var(--marron-clair), var(--bg-color));
+}
+.card .img-container:hover{
+    transform: scale(1.15);
+}
+/*fin pour .card*/
+
+
+
+
+
+/*de details-ev pour les carreaux*/
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+    height: 100vh;
+    width: 100vw; /* Fill the entire viewport horizontally */
+}
+
+
+
+
+/*pour classe fournisseur en details-ev*/
+/*pour id .fournisseur*/
+#fournisseur .one img{
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#fournisseur .one .details{
+    /*position: absolute;*/
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+#fournisseur .one:hover .details{
+    cursor: pointer;
+    background-color: rgba(245,178,178,0.7);
+}
+#fournisseur .one .details button{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #2a2a2a;
+    background: none;
+    text-transform: uppercase;
+    border-bottom: 1px solid #333;
+    padding:2.5px;
+    transform:translateY(70px);
+    transition: 0.3s ease;
+}
+#fournisseur .one .details button:hover{
+    color: aliceblue;
+    border-bottom: 1px solid #fff;
+}
+#fournisseur .one:nth-child(1) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+}
+#fournisseur .one:nth-child(2) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#fournisseur .one:nth-child(3) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: right;
+}
+/*fin pour id .fournisseur*/

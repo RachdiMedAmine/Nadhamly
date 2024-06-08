@@ -1,0 +1,286 @@
+:root{
+    --bg-color:#fffbf7;
+    --text-noir:black;
+    --text-bleu:blue;
+    --text-marron:#773a00;
+    --marron-int:#351a02;
+    --marron-clair:#ffe8d4dd;
+    --footer-color:#999;
+    --bronze:#977b3f;
+}
+
+
+body{
+    font-family: "Radley";
+    background-color: var(--bg-color);
+}
+
+
+.heading{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+   
+
+}
+.heading h3{
+    color: var(--text-marron);
+    font-size: 40px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.heading h3::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: var(--text-marron);
+}
+
+.heading p{
+font-size: 18px;
+color: var(--marron-int);
+margin-bottom: 35px;
+
+}
+
+.container{
+    width:90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.about-image{
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+
+}
+
+.about-image img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition:0.5 ease;
+    border-radius: 10px;
+
+}
+.about-image  img:hover{
+transform: scale(1.2);
+}
+
+.about-content{
+    flex: 1;
+}
+
+.about-content h2{
+    font-size: 23px;
+    margin-bottom: 15px;
+    color: var(--text-marron);
+}
+
+.about-content p{
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--text-noir);
+
+}
+
+.about-content .read-more{
+    display: inline-block;
+    padding: 10px 20px;
+    color: var(--marron-clair);
+    font-size: 19px;
+    background-color: var(--text-marron);
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: .3s ease;
+    cursor: pointer;
+
+}
+
+.about-content .read-more:hover{
+    background-color: var(--marron-clair);
+    color: var(--text-marron);
+
+
+}
+
+
+/*team*/
+.row2{
+    display: flex;
+     flex-wrap: wrap; 
+    padding: 2em 1em;
+    text-align:center;
+     
+} 
+
+.column{
+    width: 100%;
+    padding: 0.5em 0;
+
+}
+h1{
+    width: 100%;
+    text-align: center;
+    font-size: 3.5em;
+    color: var(--text-marron);
+
+}
+
+.card{
+    box-shadow:  0 0 2.2em var(--marron-clair);
+    padding: 3.5em 1em;
+    border-radius: 0.6em;
+    color: var(--text-marron);
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+.card .img-container{
+    width: 8em;
+    height: 8em;
+    background-color: var(--marron-clair);
+    padding: 0.5em;
+    border-radius: 50%;
+    margin: 0 auto 2em auto;
+}
+
+
+.card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+}
+
+.card h3{
+    font-weight: 500;
+
+}
+
+.card p{
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0.5em 0 2em 0;
+    letter-spacing: 2px;
+
+}
+
+.icons{
+    width: 50%;
+    min-width: 180px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.card a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.4em;
+}
+
+.card:hover{
+    background: linear-gradient(var(--text-marron),var(--marron-clair));
+    color: var(--bg-color);
+
+}
+
+.card .img-container:hover{
+    transform: scale(1.15);
+
+}
+
+
+/*Responsive*/
+@media screen and (max-width:768px) {
+    .heading{
+        padding: 0px 20px;
+
+    }
+    .heading h3{
+        font-size: 30px;
+    }
+    .heading p{
+        font-size: 17px;
+        margin-bottom: 0px;
+    }
+    .container{
+        padding: 0px;
+    }
+    .about{
+        padding: 20px;
+        flex-direction: column;
+    }
+    .about-image{
+        margin-right: 0px;
+        margin-bottom: 20px;
+
+    }
+    .about-content p{
+     padding: 0px;
+     font-size: 16px;
+    }
+
+    .about-content .read-more{
+        font-size: 16px;
+    }
+
+   
+   
+}
+
+ /*team*/
+ 
+  @media screen and (min-width:768px) {
+    section{
+        padding: 1em 9em;
+    } 
+ }
+
+   @media  screen and (min-width:992px) {
+    section{
+        padding: 1em;
+        
+    }
+
+    .card{
+        padding: 5em 1em;
+        width: 100%;
+    }
+    .column{
+        flex: 33.33% 0 33.33%;  
+       display: flex;
+       padding: 0 10px;
+     
+
+    }   
+
+
+
+
+    
+ } 
+  
+  
+
+

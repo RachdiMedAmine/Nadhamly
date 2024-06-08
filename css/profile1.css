@@ -1,0 +1,33 @@
+:root{
+    --bg-color:#fffbf7;
+    --text-noir:black;
+    --text-bleu:blue;
+    --text-marron:#773a00;
+    --footer-color:#999;
+
+}
+* {
+    font-family: 'Radley';
+}
+
+.mybtn {
+    border-radius:2px;border-color:#773a00;color:#773a00;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+.mybtn:hover{
+    background-color: #773a00;
+    color: white;
+}
+body {
+    background-color: var(--bg-color);
+}
+.container-all {
+    background: url(bglogin.jpg);
+    min-height: 100vh;
+    overflow-x:hidden;
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    
+}

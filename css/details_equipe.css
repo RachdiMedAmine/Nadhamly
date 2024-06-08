@@ -1,0 +1,61 @@
+:root{
+    --bg-color:#fffbf7;
+    --text-noir:black;
+    --text-bleu:blue;
+    --text-marron:#773a00;
+    --marron-int:#351a02;
+    --marron-clair:#ffe8d4dd;
+    --footer-color:#999;
+    --bronze:#977b3f;
+    --white:#fff
+  }
+body{
+    font-family: 'Radley';
+}
+  .container{
+    margin-top: 100px;
+
+  }
+
+
+  .equipe{
+    background-color: var(--text-marron);
+    color: var(--bg-color);
+    width: 50px;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+
+  .col-md-7 h2{
+    color: var(--marron-int);
+  }
+
+  .price{
+    color: var(--text-marron);
+    font-size: 26px;
+    font-weight: bold;
+    padding-top: 20px;
+
+  }
+
+  button{
+    display: inline-block;
+    padding: 10px 20px;
+    color: var(--marron-clair);
+    font-size: 19px;
+    background-color: var(--text-marron);
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: .3s ease;
+    cursor: pointer;
+
+}
+
+button:hover{
+    background-color: var(--marron-clair);
+    color: var(--text-marron);
+
+
+}

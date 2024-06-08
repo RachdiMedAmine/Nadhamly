@@ -1,0 +1,134 @@
+/*panier*/
+#cart-container{
+    overflow-x: auto;
+}
+
+#cart-container table{
+    border-collapse: collapse;
+    width:100%;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+#cart-container table thead{
+    font-weight: 700;
+
+  }
+  #cart-container table thead td{
+    color: aliceblue;
+    background: #773a00;
+    border:none;
+    padding: 6px 3px;
+
+  }
+  #cart-container table td{
+    border: 1px solid #b6b3b3;
+    text-align: center;
+  }
+  #cart-container table td:nth-child(1){
+    width: 170px;
+    
+  }
+
+  #cart-container table td:nth-child(2){
+    width: 200px;
+  }
+
+  #cart-container table td:nth-child(3){
+    width: 200px;
+  }
+
+  #cart-container table td:nth-child(4){
+    width: 170px;
+  }
+
+  #cart-container table td:nth-child(5){
+    width: 170px;
+  }
+
+  #cart-container table td:nth-child(6){
+    width: 50px;
+  }
+
+  #cart-container table tbody img{
+    border-radius: 10%;
+    width: 100px;
+    height: 80px;
+    object-fit:cover;
+  }
+  #cart-container table tbody img:hover {
+    opacity: 0.85;
+    transform: scale(1.03); /* Increase the size*/
+  }
+
+  #cart-container table tbody i{
+    color: #977b3f;
+  }
+
+button{
+    display: inline-block;
+  color: var(--marron-clair);
+  font-size: 19px;
+  background-color: var(--text-marron);
+  text-decoration: none;
+  border-radius: 10px;
+  margin-top: 15px;
+  transition: .3s ease;
+  cursor: pointer;
+  opacity: 1;
+  transition: 0.3s all;
+}
+
+h5{
+    color: var(--text-marron); 
+    text-decoration: none; 
+    transition: color 0.5s ease; 
+}
+
+#cart-bottom .coupon>div,
+#cart-bottom .total>div{
+    border: 1px solid #b6b3b3;
+}
+
+#cart-bottom .coupon h5,
+#cart-bottom .total h5{
+    color: aliceblue;
+    background: #773a00;
+    border:none;
+    padding: 6px 12px;
+    font-weight: 700;
+}
+
+#cart-bottom .coupon p,
+#cart-bottom .coupon input{
+    padding: 0 12px;
+}
+
+#cart-bottom .coupon input,
+#cart-bottom .coupon button{
+    height: 44px;
+    margin: 0 0 20px 12px;
+}
+
+#cart-bottom .total div>div{
+    padding: 0 12px;
+}
+#cart-bottom .total h6{
+    color: #773a00;
+}
+
+.second-hr{
+    background: #b8b7b3;
+    width:100%;
+    height:1px;
+}
+
+#cart-bottom .total div>button{
+    margin: 5px 12px 20px 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+

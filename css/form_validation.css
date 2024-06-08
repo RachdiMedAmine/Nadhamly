@@ -1,0 +1,11 @@
+.error{
+    color:#af4242;
+    background-color: #fde8ec;
+    padding: 10px;
+    display: none;
+    transform: translateY(-20px);
+    margin-bottom: 20px;
+    font-size: 14px;
+
+}
+

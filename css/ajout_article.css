@@ -1,0 +1,211 @@
+body{
+    font-family: 'Radley';
+}
+:root{
+    --bg-color:#fffbf7;
+    --text-noir:black;
+    --text-bleu:blue;
+    --text-marron:#773a00;
+    --marron-int:#351a02;
+    --marron-clair:#ffe8d4dd;
+    --footer-color:#999;
+}
+.container {
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background: var(--bg-color);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px var(--marron-clair);
+  }
+  .container header {
+    font-size: 1.5rem;
+    color: var(--marron-int);
+    font-weight: 500;
+    text-align: center;
+  }
+  .container .form {
+    margin-top: 30px;
+  }
+  .form .input-box {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .input-box label {
+    color: var(--marron-int);
+  }
+  .form .input-box2 {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .input-box2 label {
+    color: var(--marron-int);
+  }
+  .form :where(.input-box input, .select-box) {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color:var(--text-marron);
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 0 15px;
+  }
+   .input-box input:focus {
+    box-shadow: 0 1px 0 var(--marron-int);
+  } 
+
+  
+  textarea{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color:var(--text-marron);
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 0 15px;
+    resize: none;
+  }
+  textarea :focus{
+    box-shadow: 0 1px 0 var(--marron-int);
+  }
+  .form .column {
+    display: flex;
+    column-gap: 15px;
+  }
+  .form .cat-box {
+    margin-top: 20px;
+  }
+  .cat-box h3 {
+    color: var(--marron-int);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+  }
+  .form :where(.cat-option, .cat) {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+  }
+  .form .cat {
+    column-gap: 5px;
+  }
+  .cat input {
+    accent-color: var(--text-marron);
+  }
+  .form :where(.cat input, .cat label) {
+    cursor: pointer;
+  }
+  .cat label {
+    color: var(--text-marron);
+  }
+  label{
+    color: var(--marron-int);
+  }
+  .address :where(input, .select-box) {
+    margin-top: 15px;
+  }
+  .select-box select {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: var(--text-marron);
+    font-size: 1rem;
+  }
+  .form .button {
+    height: 55px;
+    width: 100%;
+    color: var(--marron-clair);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 30px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: var(--text-marron);
+  }
+  .form .button:hover {
+    background: var(--marron-clair);
+    color: var(--text-marron);
+  }
+  /*Responsive*/
+  @media screen and (max-width: 500px) {
+    .form .column {
+      flex-wrap: wrap;
+    }
+    .form :where(.cat-option, .cat) {
+      row-gap: 15px;
+    }
+  }
+  
+  .container2{
+    background-color: var(--bg-color);
+    width: 60%;
+    min-width: 450px;
+    /* position: relative; */
+    margin:  50px auto;
+    padding: 50px 20px;
+    border-radius: 7px;
+    
+}
+input[type="file"]{
+    display: none;
+} 
+.container2 label{
+    display: block;
+     position: relative; 
+    background-color: var(--text-marron);
+    color: var(--marron-clair);
+    font-size: 18px;
+    text-align: center;
+    width: 300px;
+    padding: 18px 0;
+    margin: auto;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.container2 label:hover{
+  background-color: var(--marron-clair);
+  color: var(--text-marron);
+}
+.container2 p{
+    text-align: center;
+    margin: 20px 0 30px 0;
+    color: var(--marron-int);
+}
+#images{
+    width: 90%;
+     position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+figure{
+    width: 45%;
+}
+img{
+    width: 100%;
+}
+figcaption{
+    text-align: center;
+    font-size: 2.4vmin;
+    margin-top: 0.5vmin;
+}
+
+
+
+/*Validation form*/
+.erreur{
+  color: red;
+}

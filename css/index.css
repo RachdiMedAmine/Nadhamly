@@ -1,0 +1,375 @@
+:root{
+    --bg-color:#fffbf7;
+    --text-noir:black;
+    --text-bleu:blue;
+    --text-marron:#773a00;
+    --marron-int:#351a02;
+    --marron-clair:#ffe8d4dd;
+    --footer-color:#999;
+    --bronze:#977b3f;
+    --white:#fff
+}
+
+body{
+    font-family: "Radley";
+    background-color: var(--bg-color);
+}
+
+
+
+.c-item {
+    height: 480px;
+  }
+  
+.c-img {
+height: 100%;
+object-fit: cover;
+filter: brightness(0.6);
+}
+
+
+
+
+@media(max-width : 991px){
+    .sidebar {    /*ici modif couleur hover*/
+        background-color:var(--text-marron) ;
+        backdrop-filter: 10px;
+    }
+}
+.fontradley {
+    font-family: 'Radley';
+}
+.bold {
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+/*Début nav bar*/
+.nav-link {
+    font-size: 22px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.navbar-nav .nav-link {
+    transition: all .50s ease;
+}
+.navbar-nav .nav-link:hover {
+    color: var(--text-marron);
+}
+.navbar {
+    padding-left: 2%;
+    padding-right: 2%;
+    /* position: relative; */
+}
+.offcanvas-body {
+    align-items: center;
+    justify-content: center;
+}
+.navbtn {
+    background-color: var(--text-marron);
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.bgbrown {
+    background-color: var(--text-marron);
+}
+/*fin nav bar*/
+
+
+
+
+/*Footer*/
+.greytext {
+    color: var(--footer-color);
+}
+footer a {
+    color: var(--footer-color); 
+    text-decoration: none; 
+    transition: color 0.5s ease; 
+}
+footer li{
+    list-style: none;
+}
+footer a:hover {
+    color: var(--text-marron); 
+    
+}
+/*fin footer*/
+
+
+
+/*pour .heading*/
+.heading{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+.heading h3{
+    color: var(--text-marron);
+    font-size: 40px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.heading h3::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: var(--text-marron);
+}
+
+.heading p{
+font-size: 18px;
+color: var(--marron-int);
+margin-bottom: 35px;
+}
+/*fin pour heading*/
+
+
+
+
+
+.container{
+    width:90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+
+
+
+
+
+/*pour .about*/
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/*css pour image*/
+.about-image{
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+}
+.about-image img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition:0.5 ease;
+    border-radius: 10px;
+}
+.about-image  img:hover{
+transform: scale(1.2);
+}
+/*fin css image */
+.about-content{
+    flex: 1;
+}
+.about-content ul {
+    background-color: #ffeeba;
+    margin-right: 30px;
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--text-noir);
+}
+.about-content h2{
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: var(--text-marron);
+}
+.about-content p{
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--text-noir);
+}
+.about-content .read-more{
+    display: inline-block;
+    padding: 10px 20px;
+    color: var(--marron-clair);
+    font-size: 19px;
+    background-color: var(--text-marron);
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: .3s ease;
+    cursor: pointer;
+
+}
+/*fin pour .about*/
+
+
+
+
+
+
+
+
+
+
+.icons{
+    width: 50%;
+    min-width: 180px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+/*Responsive*/
+@media screen and (max-width:768px) {
+    .heading{
+        padding: 0px 20px;
+
+    }
+    .heading h3{
+        font-size: 30px;
+    }
+    .heading p{
+        font-size: 17px;
+        margin-bottom: 0px;
+    }
+    .container{
+        padding: 0px;
+    }
+    .about{
+        padding: 20px;
+        flex-direction: column;
+    }
+    .about-image{
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .about-content p{
+     padding: 0px;
+     font-size: 16px;
+    }
+    .about-content .read-more{
+        font-size: 16px;
+    } 
+}
+/*fin responsive*/
+
+
+
+
+
+
+
+
+/*team*/
+.row2{
+    display: flex;
+     flex-wrap: wrap; 
+    padding: 2em 1em;
+    text-align:center;    
+} 
+.column{
+    width: 100%;
+    padding: 0.5em 0;
+}
+  @media screen and (min-width:768px) {
+    section{
+        padding: 1em 9em;
+    } 
+ }
+   @media  screen and (min-width:992px) {
+    section{
+        padding: 1em; 
+    }
+    .card{
+        padding: 5em 1em;
+        width: 100%;
+    }
+    .column{
+        flex: 33.33% 0 33.33%;  
+       display: flex;
+       padding: 0 10px;
+    }   
+ } 
+/*fin team*/
+
+
+
+
+  
+  
+
+
+/*///////////////////////////////////rajoutés pour detail-ev, details-art et panier///////////////////////////////////////////////////////////////////////////////////////////*/
+  
+/* le petit trait de separation*/
+hr{ 
+background: var(--text-marron);
+background-color: var(--text-marron);
+width:30px;
+height: 3px;
+}
+/*fin le petit trait de separation*/
+
+/*pour inpu*/
+.custom-input {
+    margin-top: 10px; /* Adjust as needed */
+    margin-bottom: 10px; /* Adjust as needed */
+    padding-top: 5px; /* Adjust as needed */
+    padding-bottom: 5px; /* Adjust as needed */
+}
+
+/*fin pout date input*/
+
+
+.buy-btn:hover {
+background-color: #3a3833; /* Background color when hovered */
+opacity: 0.8;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+
+button{
+font-size: 0.8rem;
+font-weight: 700;
+outline: none;
+border:none;
+background-color: #1d1d1d;
+color:aliceblue;
+padding: 13px 30px;
+cursor: pointer;
+text-transform: uppercase;
+transition: 0.3s ease;
+}
+button:hover{
+    background-color: var(--text-marron);
+}
+
+
+  /* les etoiles dans details-art et details -ev*/
+  
+  .star i{
+    font-size: 0.8rem;
+    color: goldenrod !important;
+  }
+/* fin les etoiles dans details-art et details -ev*/
+
+
+
+

@@ -1,0 +1,17 @@
+.container-all {
+    background: url(bglogin.jpg);
+    min-height: 100vh;
+    overflow-x:hidden;
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    
+}
+.container {
+    background: white;
+    margin-top: 2rem;
+    padding:1rem;
+    height:800px;
+    overflow-y: auto;
+}
